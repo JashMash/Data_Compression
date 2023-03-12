@@ -4,7 +4,7 @@ Here my goal is to create a set of functions that will compress<br/>
 and decompress a byte array.
 
 I have implemented the solutions below and provided unit tests <br/>
-for both of the compression and decompression functions. 
+for both of the compression and decompression functions. <br/>
 The reason I have provided both is to show you the thought process<br/>
 of how I was able to come up with these solutions.
 
@@ -12,18 +12,21 @@ of how I was able to come up with these solutions.
 ### Simple duplication compression for range 0-127.
 Functions:
    - byte_compress(data)-> bytes
-   - byte_decomp(compressed_data)-> bytes
+   - byte_decomp(compressed_data)-> bytes <br/>
+
 Unit test file:
    - data_comp_tests.py
+<br/><br/>
 
 ### More complex duplication storage for values ranging 0-255.<br/>
 Functions:
    - byte_compress_complex(data)-> bytes
-   - byte_decomp_complex(compressed_data)-> bytes
+   - byte_decomp_complex(compressed_data)-> bytes<br/>
+
 Unit test file:
    - data_comp_complex_tests.py
 
-
+<br/><br/>
 
 ## Brain stormed solutions:
 1. ### Simple duplication compression for range 0-127.<br/>
