@@ -1,0 +1,6 @@
+*.docx
+method_testing.py
+method_testing2.py
+.venv/
+.vscode/
+__pycache__/
