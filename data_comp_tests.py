@@ -76,6 +76,8 @@ class DataCompressionTests(unittest.TestCase):
         Tests:
             - Compress input datatype check
             - Decompress input datatype check
+            - Compress no data
+            - Decompress no data
 
             - Base case (last index is dupe)
             - Last index not being a dupe
@@ -108,6 +110,24 @@ class DataCompressionTests(unittest.TestCase):
         
 
         with self.assertRaises(TypeError):
+            byte_decomp(data)
+
+    def test_no_data_compress(self):
+        """
+            TEST: Compressing no data
+        """
+        data = bytes([])
+        
+        with self.assertRaises(ValueError):
+            byte_compress(data)
+    
+    def test_no_data_decompress(self):
+        """
+            TEST: Decompressing no data
+        """
+        data = bytes([])
+        
+        with self.assertRaises(ValueError):
             byte_decomp(data)
 
 

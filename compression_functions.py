@@ -43,8 +43,13 @@ def byte_compress(data)-> bytes:
         Output:
             compressed_data : <class 'bytes'> input data that has been compressed 
     """
+    # Checking input type
     if type(data) is not bytes:
         raise TypeError("The passed type NEEDS to be of type <bytes>")
+    
+    # Checking if input is empty
+    if len(data) == 0:
+        raise ValueError("No Entries found in data.")
 
     compressed_data=list()
     prev = None
@@ -118,9 +123,13 @@ def byte_decomp(compressed_data)-> bytes:
         Output:
             decomp_data : <class 'bytes'> decompressed data     
     """
+    # Checking input type
     if type(compressed_data) is not bytes:
         raise TypeError("The passed type NEEDS to be of type <bytes>")
-
+    
+    # Checking if input is empty
+    if len(compressed_data) == 0:
+        raise ValueError("No Entries found in data.")
 
     decomp_data = list()
     prev = None
@@ -166,8 +175,13 @@ def byte_compress_complex(data)-> bytes:
         Output:
             compressed_data : <class 'bytes'> input data that has been compressed 
     """
+    # Checking input type
     if type(data) is not bytes:
         raise TypeError("The passed type NEEDS to be of type <bytes>")
+    
+    # Checking if input is empty
+    if len(data) == 0:
+        raise ValueError("No Entries found in data.")
 
     dup_code = 1
     its_own_val = 0
@@ -228,6 +242,7 @@ def byte_compress_complex(data)-> bytes:
     # converting the list to a bytes object
     return bytes(compressed_data)
 
+
 def byte_decomp_complex(compressed_data)-> bytes:
     """
         This function will ONLY works when paired with the 
@@ -248,8 +263,13 @@ def byte_decomp_complex(compressed_data)-> bytes:
         Output:
             decomp_data : <class 'bytes'> decompressed data  
     """
+    # Checking input type
     if type(compressed_data) is not bytes:
         raise TypeError("The passed type NEEDS to be of type <bytes>")
+    
+    # Checking if input is empty
+    if len(compressed_data) == 0:
+        raise ValueError("No Entries found in data.")
 
     dup_code = 1
     its_own_val = 0
