@@ -88,6 +88,8 @@ class DataCompressionTests(unittest.TestCase):
             - Functional for 5000 Data points
             - Functional for 20000 Data points
     """
+
+    
     def test_wrong_input_compress(self):
         """
             TEST: Compress input datatype check

@@ -98,7 +98,7 @@ def byte_compress(data)-> bytes:
     else:
         compressed_data.append(prev)
 
-    # converting the list to a bytes object
+    # Converting the list to a bytes object
     return bytes(compressed_data)
 
 def byte_decomp(compressed_data)-> bytes:
@@ -142,7 +142,7 @@ def byte_decomp(compressed_data)-> bytes:
             decomp_data.append(val)
             prev =val
 
-    # converting the list to a bytes object
+    # Converting the list to a bytes object
     return bytes(decomp_data)
 
 
@@ -239,7 +239,7 @@ def byte_compress_complex(data)-> bytes:
     else:
         compressed_data.append(prev)
 
-    # converting the list to a bytes object
+    # Converting the list to a bytes object
     return bytes(compressed_data)
 
 
@@ -295,6 +295,6 @@ def byte_decomp_complex(compressed_data)-> bytes:
             decomp_data.append(val)
             prev =val
 
-    # converting the list to a bytes object
+    # Converting the list to a bytes object
     return bytes(decomp_data)
 
