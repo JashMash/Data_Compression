@@ -5,8 +5,8 @@ import unittest
 import numpy as np
 
 # Function imports
-from compression_functions import byte_compress_complex
-from compression_functions import byte_decomp_complex
+from complex_compression_funcs import byte_compress_complex
+from complex_compression_funcs import byte_decomp_complex
 
 
 

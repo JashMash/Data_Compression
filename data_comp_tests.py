@@ -5,8 +5,8 @@ import unittest
 import numpy as np
 
 # Function imports
-from compression_functions import byte_compress
-from compression_functions import byte_decomp
+from compression_funcs import byte_compress
+from compression_funcs import byte_decomp
 
 
 
@@ -89,7 +89,7 @@ class DataCompressionTests(unittest.TestCase):
             - Functional for 20000 Data points
     """
 
-    
+
     def test_wrong_input_compress(self):
         """
             TEST: Compress input datatype check
