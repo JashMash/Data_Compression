@@ -177,7 +177,7 @@ class DataCompressionTests(unittest.TestCase):
                     values greater than 127
         """
 
-        data = np.random.randint(0,255, 50)
+        data = np.random.randint(128,255, 50)
 
         data = bytes(list(data))
         

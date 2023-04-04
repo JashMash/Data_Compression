@@ -1,7 +1,8 @@
 # Data Compression Algorithm
 
 Here my goal is to create a set of functions that will compress<br/>
-and decompress a byte array.
+and decompress a byte array. This is given the input does contain<br/>
+multiple duplicates that follow each other.<br/>
 
 I have implemented the solutions below and provided unit tests <br/>
 for both of the compression and decompression functions. <br/>
